@@ -11,7 +11,15 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    
+}
+
 main{
+    position: absolute;
+    display: inline-block;
+    max-width: auto;
+    min-width: 320px;
 
 }
 .infoPersonal__titulo{
@@ -21,11 +29,65 @@ main{
 .infoPersonal__profeciones{
     font-size: 0.8rem;
 }
+
+.infoPersonal__foto-figure{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+.infoPersonal__foto-img{
+    align-self: center;
+    width: 50%;
+
+}
 .descriptionSobreMi{
     padding: 20px;
+    text-align: center;
     color: var(--Color-blanco);
     background-color: var(--Secundario-color);
 }
-.infoPersonal__foto-img{
-    width: 50%;
+.descripcionSobreMi__titulo{
+    display: block;
+    text-align: center;
+}
+.skillsMios{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.skillMio__contenido{
+    text-align: center;
+}
+.skillMio__titulo{
+    margin: 5px 0;
+}
+.skillMio__text{
+    margin: 5px 0;
+}
+.skillMio__primeraParte{
+
+}
+.skillMio__primeraParte-subTitulo{  
+    margin: 5px 0;
+}
+.skillMio__primeraParte-text{
+    margin: 5px 0; 
+}
+
+.Proyectos{
+
+}
+.proyecto__a{
+    color: none;
+    text-decoration: none;
+}
+.proyecto__conteiner{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+.proyecto__conteiner-img{
+    width: 300px;
 }
