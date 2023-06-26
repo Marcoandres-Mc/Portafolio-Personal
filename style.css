@@ -1,0 +1,31 @@
+:root{
+    --Font-principal-color: #141c3a;
+    --Color-negro: black;
+    --Color-blanco: white;
+    --Secundario-color:#6E07F3;
+    
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+
+}
+.infoPersonal__titulo{
+    font-size: 2rem;
+    color: var(--Font-principal-color);
+}
+.infoPersonal__profeciones{
+    font-size: 0.8rem;
+}
+.descriptionSobreMi{
+    padding: 20px;
+    color: var(--Color-blanco);
+    background-color: var(--Secundario-color);
+}
+.infoPersonal__foto-img{
+    width: 50%;
+}
