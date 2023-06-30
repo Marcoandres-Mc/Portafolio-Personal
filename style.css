@@ -41,6 +41,21 @@ main{
     width: 50%;
 
 }
+.infoPersonal__redesSociales{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 5px 10px;
+
+}
+.infoPersonal__redesSociales-a{
+    width: 100%;
+    height: 100%;
+}
+.infoPersonal__redesSociales-logos{
+    width: 30px;
+    color: var(--Color-negro);
+}
 .descriptionSobreMi{
     padding: 20px;
     text-align: center;
