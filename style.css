@@ -32,13 +32,15 @@ main{
 
 .infoPersonal__foto-figure{
     display: grid;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    
 
 }
 .infoPersonal__foto-img{
-    align-self: center;
-    width: 50%;
+    display: inline-block;
+    width: 200px;
 
 }
 .infoPersonal__redesSociales{
@@ -69,26 +71,19 @@ main{
 .skillsMios{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
 }
 .skillMio__contenido{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--Color-negro);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    gap: 15px;
     text-align: center;
+    
 }
-.skillMio__titulo{
-    margin: 5px 0;
-}
-.skillMio__text{
-    margin: 5px 0;
-}
-.skillMio__primeraParte{
 
-}
-.skillMio__primeraParte-subTitulo{  
-    margin: 5px 0;
-}
-.skillMio__primeraParte-text{
-    margin: 5px 0; 
-}
 
 .Proyectos{
 
@@ -105,4 +100,23 @@ main{
 }
 .proyecto__conteiner-img{
     width: 300px;
+}
+footer{
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: var(--Secundario-color);
+    color: var(--Color-blanco);
+}
+
+.conteiner{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+    justify-items: center;
+}
+.bloque{
+    background-color: #141c3a;
 }
