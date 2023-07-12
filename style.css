@@ -23,11 +23,13 @@ main{
 
 }
 .infoPersonal__titulo{
+    margin: 0 0 0 5px;
     font-size: 2rem;
     color: var(--Font-principal-color);
 }
 .infoPersonal__profeciones{
-    font-size: 0.8rem;
+    margin: 0 0 0 5px;
+    font-size: 1rem;
 }
 
 .infoPersonal__foto-figure{
@@ -83,7 +85,9 @@ main{
     text-align: center;
     
 }
-
+.skillMio__segundaParte-subTitulo ,.skillMio__tercerParte-subTitulo{
+    color: var(--Secundario-color);
+}
 
 .Proyectos{
 
@@ -94,29 +98,18 @@ main{
 }
 .proyecto__conteiner{
     display: block;
+    text-align: center;
     margin: 10px;
     padding: 10px;
-    border: 2px solid black;
-}
-.proyecto__conteiner-img{
-    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: var(--Color-negro);
 }
 footer{
     position: relative;
-    margin: 10px 0 0 0;
-    padding: 10px;
+    margin: 30px 0 0 0;
+    padding: 40px;
     background-color: var(--Secundario-color);
     color: var(--Color-blanco);
 }
 
-.conteiner{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 100px 100px;
-    gap: 20px;
-    justify-items: center;
-}
-.bloque{
-    background-color: #141c3a;
-}
