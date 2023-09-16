@@ -2,7 +2,7 @@
     --Font-principal-color: #141c3a;
     --Color-negro: black;
     --Color-blanco: white;
-    --Secundario-color:#6E07F3;
+    --Secundario-color:#2b075a;
     
 
 }
@@ -14,13 +14,47 @@
 html{
     
 }
+header{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: var(--Secundario-color);
+}
 
+.header__list-mobile{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+.header__list{
+    display: none;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 20px;
+    width: 100%;
+    list-style-type: none;
+
+}
+.header__list-a{
+    display: flex;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+.header__list-a li{
+    text-align: none;
+    color: white;
+}
 main{
-    position: absolute;
     display: inline-block;
-    max-width: auto;
     min-width: 320px;
 
+}
+.infoPersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .infoPersonal__titulo{
     margin: 0 0 0 5px;
@@ -30,6 +64,12 @@ main{
 .infoPersonal__profeciones{
     margin: 0 0 0 5px;
     font-size: 1rem;
+}
+.infoPersonal__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 330px;
 }
 
 .infoPersonal__foto-figure{
@@ -46,22 +86,23 @@ main{
 
 }
 .infoPersonal__redesSociales{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     gap: 20px;
     margin: 5px 10px;
+    width: 180px;
 
 }
 .infoPersonal__redesSociales-a{
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
 }
 .infoPersonal__redesSociales-logos{
     width: 30px;
     color: var(--Color-negro);
 }
 .descriptionSobreMi{
-    padding: 20px;
+    padding: 50px 20px;
     text-align: center;
     color: var(--Color-blanco);
     background-color: var(--Secundario-color);
@@ -73,6 +114,7 @@ main{
 .skillsMios{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .skillMio__contenido{
     display: flex;
@@ -97,13 +139,24 @@ main{
     text-decoration: none;
 }
 .proyecto__conteiner{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 10px;
-    padding: 10px;
     border: 1px solid black;
     border-radius: 15px;
+    width: 250px;
     color: var(--Color-negro);
+}
+.proyecto__content{
+
+}
+.proyecto__content img{
+    width: 250px;
+    height: 150px;
+}
+.proyecto__descripcion{
+    
 }
 footer{
     position: relative;
@@ -113,3 +166,48 @@ footer{
     color: var(--Color-blanco);
 }
 
+@media (min-width:550px) {
+    .header__list-mobile{
+        display: none;
+    }
+    .header__list-mobile button{
+        display: none;
+    }
+    .header__list{
+        display: flex;
+    }
+    main{
+        display: inline;
+        margin:auto
+    }
+    .infoPersonal{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+    .infoPersonal__contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoPersonal__foto-figure{
+        margin: 0 0 0 20px;
+    }
+    .skillsMios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skillMio__contenido{
+        width: 500px;
+    }
+    .proyecto__conteiner{
+        flex-direction: column;
+    }
+    ..proyecto__descripcion{
+        border-left: 1px solid black;
+    }
+}
