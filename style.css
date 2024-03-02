@@ -108,7 +108,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
     padding: 0 10px;
+}
+.infoPersonal__contenido h2, h3{
+    text-align: center;
 }
 
 .infoPersonal__foto-figure{
@@ -127,9 +132,9 @@ main{
 .infoPersonal__redesSociales{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
     margin: 5px 10px;
-    width: 180px;
 
 }
 .infoPersonal__redesSociales-a{
@@ -141,13 +146,25 @@ main{
     color: var(--Color-negro);
 }
 .infoPersonal__flecha{
+    display: grid;
+    justify-content: center;
+    margin: 0 0 10px 0;
 
 }
-.infoPersonal__flecha-desktop{
-    display: none;
-    justify-content: center;
-    margin: 10px 0 10px 0;
+.infoPersonal__flecha:hover{
+    animation: flecha 0.5s ease infinite;
+}
+@keyframes flecha{
+    0%{
+        
+        transform: translate(0,-10px);
+    }
+    50%{
 
+    }
+    100%{
+        transform: translate(0,10px);
+    }
 }
 .descriptionSobreMi{
     padding: 180px 20px;
@@ -509,6 +526,10 @@ footer{
     .menu-mobile__list{
         display: none;
     }
+    .infoPersonal__flecha{
+        grid-area: 2/1/3/3;
+    }
+
     
 }
 
@@ -558,13 +579,6 @@ footer{
     }
     .infoPersonal__foto-figure{
         margin: 0 0 0 20px;
-    }
-    .infoPersonal__flecha{
-        display: none;
-    }
-    .infoPersonal__flecha-desktop{
-        display: grid;
-        margin: 20px 0 60px 0;
     }
     .skillsMios{
         display: flex;
